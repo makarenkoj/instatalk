@@ -36,7 +36,7 @@ gem 'redis', '~> 3.0'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'pg', '~> 0.18.4'
+  gem 'pg'
 end
 
 group :development, :test do
