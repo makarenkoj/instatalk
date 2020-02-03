@@ -20,7 +20,7 @@ class RoomChannel < ApplicationCable::Channel
     logger.info "RoomChannel, speak: #{data.inspect}"
 
     MessageService.new(
-        body: data['message'], room: @room, user: current_user
+      body: data['message'], room: @room, user: current_user
     ).perform
   end
 end
